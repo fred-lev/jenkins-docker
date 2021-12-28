@@ -20,9 +20,9 @@ RUN apt-get update && apt-get install -y \
        --no-install-recommends\
        && apt-get clean \
        && rm -rf /var/lib/apt/lists/*
-RUN curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" \
+RUN curl -L "https://github.com/docker/compose/releases/download/2.2.2/docker-compose-$(uname -s)-$(uname -m)" \
        -o /usr/local/bin/docker-compose  \
        && chmod +x /usr/local/bin/docker-compose \
        &&  ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 USER jenkins
-RUN jenkins-plugin-cli --plugins blueocean:1.24.3
+RUN jenkins-plugin-cli --plugins blueocean:1.25.2
