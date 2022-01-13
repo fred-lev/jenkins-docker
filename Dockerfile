@@ -25,4 +25,6 @@ RUN curl -L "https://github.com/docker/compose/releases/download/2.2.2/docker-co
        && chmod +x /usr/local/bin/docker-compose \
        &&  ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 USER jenkins
+# Bypass broken mirror
+ENV JENKINS_UC_DOWNLOAD_URL=https://archives.jenkins.io/plugins/
 RUN jenkins-plugin-cli --plugins blueocean:1.25.2
