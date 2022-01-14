@@ -1,3 +1,3 @@
 # jenkins-docker
 
-Dockerfiles to run Jenkins locally.
+Dockerfiles to run Jenkins as well as a Docker In Docker container used to run the agents.
