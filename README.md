@@ -8,4 +8,4 @@ The docker client on the Jenkins side is using shared certs to connect to the do
 
 Note: 
 
-For testing purposes I've run this on a t2.large in Aws.
+For testing purposes I am runnig this on a t2.large in AWS.
